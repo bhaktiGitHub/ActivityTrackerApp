@@ -4,7 +4,7 @@
   "description": "Simple authentication system",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.js"
     
   },
   "author": "",
