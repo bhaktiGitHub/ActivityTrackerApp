@@ -1,7 +1,9 @@
 /* Space out content a bit */
 body {
+  width:100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #FF8100;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -10,12 +12,19 @@ body {
 .footer {
   padding-right: 15px;
   padding-left: 15px;
+  background-color: maroon;
+  width:100%;
+  
+
 }
 
 /* Custom page header */
 .header {
   padding-bottom: 20px;
+  padding-top:15px;
   border-bottom: 1px solid #e5e5e5;
+  height:80px;
+
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -26,62 +35,246 @@ body {
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
+  font-size: 18px;
+  padding-top: 10px;
+  color:yellow;
+  text-align: center;
+  height:65px;
   border-top: 1px solid #e5e5e5;
 }
 
+footer{
+  margin-top:20px;
+}
+
 /* Customize container */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .container {
     max-width: 730px;
   }
 }
 .container-narrow > hr {
   margin: 30px 0;
-}
+}*/
 
 /* Main marketing message and sign up button */
-.jumbotron {
+/*.jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
-}
+}*/
 
 /* Supporting marketing content */
-.marketing {
+/*.marketing {
   margin: 40px 0;
 }
 .marketing p + h4 {
   margin-top: 28px;
 }
-
+*/
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {*/
   /* Remove the padding we set earlier */
-  .header,
+  /*.header,
   .marketing,
   .footer {
     padding-right: 0;
     padding-left: 0;
-  }
+  }*/
   /* Space out the masthead */
-  .header {
+  /*.header {
     margin-bottom: 30px;
-  }
+  }*/
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
+  /*.jumbotron {
     border-bottom: 0;
   }
-}
+}*/
 
-.page-header{
+/*.page-header{
   margin-top:0;
+}*/
+
+
+nav h1{
+  text-align: center;
+  font-family: 'Indie Flower';
+  font-size: 40px;
+  color:white;
+  margin-top:10px;
+}
+section{
+  background-color: #FFC573;
+  margin:140px auto 0px;
+  width:90%;
+  height:85%;
+  padding:25px;
+  border-radius: 5px;
 }
 
-footer{
-  margin-top:40px;
+.monthlyFrequency , .weeklyFrequency{
+  width:100px;
+  margin-bottom:15px;
 }
+.info
+{
+  width:90%;
+  height:80%;
+  margin-top: 150px;
+  overflow: scroll;
+
+}
+#activity
+{
+  display:block;
+  border: 2px solid black;
+  border-radius: 4px;
+  width:50%;
+  height: 8%;
+  margin-bottom:10px;
+}
+
+.updateActivity
+{
+  margin-top: 15px;
+}
+
+label
+{
+  font-size:15px;
+  font-weight: bold;
+  color:blue;
+  margin-bottom:10px;
+
+}
+
+.day , .updateDay{
+  padding:10px;
+  float:left;
+  margin:10px;
+  border:2px solid #000000;
+  border-radius: 6px;
+  width:50px;
+}
+.dayselected{
+  background:yellow;
+
+}
+#update{
+  position:fixed;
+  overflow: scroll;
+  border: 2px solid purple;
+  border-radius:4px;
+  width:60%;
+  height:70%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background: #FFAD00;
+  padding:50px;
+
+}
+
+.update ,.delete{
+  color:Blue;
+  font-weight:bold;
+  font-size:20px;
+  background-color: #FF8100;
+  border-radius: 4px;
+  border:2px solid black;
+  height:35px;
+  width:150px;
+}
+.add{
+  background-color: green;
+  font-weight: bold;
+  font-size:16px;
+}
+
+.myprofile{
+  color:blue;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.featureList{
+  color:blue;
+  font-weight: bold;
+  font-size:16px;
+
+}
+
+
+.login{
+  background-color: #99ff66;
+  width:30%;
+  height:40%;
+  margin-top: 10px;
+  padding-left: 10px;
+  float: right;
+}
+fieldset{
+  border:0;
+}
+
+.registrationForm{
+  margin-top: 150px;
+}
+div.btn{
+  display:none;
+
+}
+.activityList{
+  margin-top: 20px;
+  height:425px;
+  overflow: scroll;
+  border:2px solid maroon;
+  line-height: 1.5;
+  /*margin:140px auto 0px;*/
+}
+
+.strikethrough{
+  text-decoration: line-through;
+  color:grey;
+}
+.bttn{
+  width:20%;
+  height:40px;
+  color:yellow;
+  font-size:20px;
+  font-weight:bold;
+  border-radius: 5px;
+  background-color: maroon;
+
+}
+
+.displayActivity{
+  width:50%;
+  height:40px;
+  background-color: rgb(250, 255, 189) !important;
+  border:2px solid black;
+  font-weight: bold;
+  color:maroon;
+}
+.morningAct h2 , 
+.afternoonAct h2,
+.eveningAct h2,
+h1{
+  color:maroon;
+  font-weight: bold;
+} 
+.actName{
+  font-size:18px;
+  color:blue;
+}
+
+img{
+  width:25px;
+  height: 25px;
+}
+
+
+

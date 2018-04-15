@@ -1,2 +1,27 @@
- <h2 class="page-header">Dashboard</h2>
-<p>Welcome to your dashboard</p>  
+ <h2 class="page-header">Dashboard</h2> 
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+  	
+  </script>
+		<section class="activityList">
+		<select class="displayActivity" >
+          <option value="selection" >Please choose to see schedule  </option>
+	      <option value="Daily" >Daily</option>
+	      <option value="Weekly" >Weekly</option>
+	      <option value="Monthly" >Monthly</option>
+        </select>
+
+			<div class="morningAct"><h2> Morning Activity</h2></div>
+			<div class="afternoonAct"><h2> Afternoon Activity</h2></div>
+			<div class="eveningAct"><h2> Evening Activity</h2></div>
+		</section>
+		
+		<div class="user" id="{{user.username}}"> </div>
+		<script src="/js/home.js" ></script>
+	
+
+
+ 

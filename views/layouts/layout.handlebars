@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LoginApp</title>
+	<title>Activity Tracker </title>
 	<link rel="stylesheet" href="/css/bootstrap.css" />
 	<link rel="stylesheet" href="/css/style.css" />
 </head>
@@ -12,19 +12,27 @@
           <ul class="nav nav-pills pull-right">
             {{#if user}}
               <li role="presentation"><a href="/">Dashboard</a></li>
+              <li role="presentation"><a href="/addactivity">Activity</a></li>
+              <li role="presentation"><a href="/info">Profile</a>
+                
+              </li>
+              <li role="presentation"><a href="/about">About Us</a></li>
               <li role="presentation"><a href="/users/logout">Logout</a></li>
+              
+
             {{else}}
               <li role="presentation"><a href="/users/login">Login</a></li>
               <li role="presentation"><a href="/users/register">Register</a></li>
+              <li role="presentation"><a href="/about">About Us</a></li>
             {{/if}}
           </ul>
         </nav>
-        <h3 class="text-muted">LoginApp</h3>
+        <h3 class="text-muted">Activity Tracker</h3>
       </div>
 
 
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 ">
           {{#if success_msg}}
             <div class="alert alert-success">{{success_msg}}</div>
           {{/if}}
@@ -44,7 +52,7 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; 2015 LoginApp, Inc.</p>
+        <p>Activity Tracker </p>
       </footer>
 
     </div> <!-- /container -->

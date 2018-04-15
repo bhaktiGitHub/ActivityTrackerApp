@@ -1,0 +1,73 @@
+<h2 class="page-header">New Activity</h2> 
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    
+    <section class="activityList">
+      
+          <div class="user" id="{{user.username}}"> </div>
+          <label for="updateName">Name: </label>
+          <input type= "text" id="activity" >
+          
+          <label for="updateIcon">Icon: </label><br>
+          <input type="radio" name="icon" value="icon1" > <img src="../images/icon1.png" alt ="icon1"><br>
+            <input type="radio" name="icon" value="icon2" > <img src="../images/Book.jpg" alt ="icon2" ><br>
+            <input type="radio" name="icon" value="icon3"  > <img src="../images/Water.jpg" alt ="icon3"><br>
+            <input type="radio" name="icon" value="icon4" > <img src="../images/other.jpg" alt ="icon4"><br><br>
+
+            <label for="schedule">I want to repeat this activity  </label><br>
+
+                 <input type="radio" name="schedule" value="Daily" > Daily<br>
+                    <input type="radio" name="schedule" value="Weekly"  > Weekly<br>
+                   <input type="radio" name="schedule" value="Monthly" > Monthly<br>
+
+                <div class="dayWrapper">                
+                <label for="schedule">These Days  </label><br>
+                <div  id="monday"   class="day">Mon</div>
+                <div  id="tuesday" class="day">Tue</div>
+                <div  id="wednesday" class="day">Wed</div>
+                <div  id="thursday" class="day">Thu</div>
+                <div  id="friday" class="day">Fri</div>
+                <div  id="saturday" class="day">Sat</div>
+                <div  id="sunday" class="day">Sun</div>
+                </div>
+
+                <div class="weekWrapper" style="display:none">
+                <label for="schedule">These many days in a week  </label><br>
+                <select class="weeklyFrequency">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+                </div><br>
+
+                <div class="monthWrapper" style="display:none">
+                <label for="schedule">This time of the month  </label><br>
+                <select class="monthlyFrequency">
+                <option value="start">start</option>
+                <option value="middle">middle</option>
+                <option value="end">end</option>
+                </select>
+                </div><br><br><br>
+                   
+                   <label for="time">In the </label><br>
+                 <input type="checkbox" name="time" value="Morning"> Morning<br>
+                   <input type="checkbox" name="time" value="Afternoon"> Afternoon<br>
+                   <input type="checkbox" name="time" value="Evening" > Evening<br><br>
+
+                   <button class="bttn addActivity">Add Activity</button>
+
+      
+    </section>
+
+    <script src="/js/activity.js" ></script>
+  
+
+
+
+
+ 
