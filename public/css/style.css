@@ -286,6 +286,13 @@ img{
   width:25px;
   height: 25px;
 }
+form {
+    margin-left: 30%;
+}
+.loginbtn {
+    margin-left: 0;
+    width:70%;
+}
 
 .hambergermenu{
   display:none;
@@ -300,6 +307,10 @@ img{
   float:right;
   margin-bottom: -20px;
   margin-top:10px;
+  color: blue;
+  font-weight: bold;
+  font-size:20px;
+  background-color: #FFC573;
 }
 #update{
   width:85%;
