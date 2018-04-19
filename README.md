@@ -22,3 +22,5 @@ Visualize your Daily, Weekly, and Monthly activity .
 User can strikethrough just to make a note that this activity is done and undo it as well.
 
 User can update and delete activities.
+
+<img src="public/images/Book.jpg" width="350" alt="book"/>
