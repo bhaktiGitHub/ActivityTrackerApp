@@ -1,21 +1,24 @@
-# Node.js Loginapp
-
-This is a user login and registration app using Node.js, Express, Passport and Mongoose. It is part of the YouTube series [here](https://www.youtube.com/watch?v=Z1ktxiqyiLA)
-
-### Version
-1.1.0
-
-### Usage
+#Activity Tracker App 
 
 
-### Installation
+Features
 
-Loginapp requires [Node.js](https://nodejs.org/) v4+ to run.
+Register if you are a new user.
 
-```sh
-$ npm install
-```
+Login if you are a registered user.
 
-```sh
-$ npm start
-```
+User can see his account details.
+
+As a registered user you can see list of all activities once you login .
+
+User can add new activities.
+
+Since no day is like the other, we prefer a weekly target but we will also show you a daily goal based on your target .
+
+See your activity by daytime like morning , afternoon and evening .
+
+Visualize your Daily, Weekly, and Monthly activity .
+
+User can strikethrough just to make a note that this activity is done and undo it as well.
+
+User can update and delete activities.
