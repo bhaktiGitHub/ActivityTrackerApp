@@ -4,6 +4,14 @@
 	<title>Activity Tracker </title>
 	<link rel="stylesheet" href="/css/bootstrap.css" />
 	<link rel="stylesheet" href="/css/style.css" />
+
+   <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 </head>
 <body>
 	<div class="container">
@@ -26,6 +34,27 @@
               <li role="presentation"><a href="/about">About Us</a></li>
             {{/if}}
           </ul>
+          <select class="hambergermenu">
+            <option value="/">Select page</option>
+            {{#if user}}
+              
+              <option value="/">Dashboard</option>
+              <option value="/addactivity">Activity</option>
+              <option value="/info">Profile
+                
+              </option>
+              <option value="/about">About Us</option>
+              <option value="/users/logout">Logout</option>
+              
+
+            {{else}}
+              <option value="/users/login">Login</option>
+              <option value="/users/register">Register</option>
+              <option value="/about">About Us</option>
+            {{/if}}
+            
+          </select>
+
         </nav>
         <h3 class="text-muted">Activity Tracker</h3>
       </div>
@@ -56,5 +85,13 @@
       </footer>
 
     </div> <!-- /container -->
+   
+    <script type="text/javascript">
+      $('.hambergermenu').change(function()
+      {
+        console.log(this.value);
+        window.location.href = this.value;
+      })
+    </script>
 </body>
 </html>

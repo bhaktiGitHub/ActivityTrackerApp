@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node app.js",
     "test": "mocha --exit"
-    
   },
   "author": "",
   "license": "ISC",
@@ -27,7 +26,6 @@
     "passport-http": "*",
     "passport-local": "*"
   },
-  
   "devDependencies": {
     "chai": "^3.2.0",
     "chai-http": "^1.0.0"

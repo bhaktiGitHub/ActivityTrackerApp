@@ -62,7 +62,7 @@ $('body').on("click" , ".update" ,function(){
 						 		 <input type="radio" name="updateSchedule" value="Daily" ${(data.schedule=="Daily") ? "checked" : ""}> Daily<br>
 						  		  <input type="radio" name="updateSchedule" value="Weekly" ${(data.schedule=="Weekly") ? "checked" : ""} > Weekly<br>
 						  		 <input type="radio" name="updateSchedule" value="Monthly" ${(data.schedule=="Monthly") ? "checked" : ""}> Monthly<br>
-
+<br>
 								<div class="dayWrapper" ${(data.schedule=="Daily") ? "" : "style = 'display:none'"}>						 		
 						 		<label for="schedule">These Days  </label><br>
 						 		<div class="updateDay ${(($.inArray("monday",data.days)!==-1)) ? "dayselected" : ""}" id="monday" >Mon</div>
@@ -72,9 +72,9 @@ $('body').on("click" , ".update" ,function(){
 						 		<div class="updateDay ${(($.inArray("friday",data.days)!==-1)) ? "dayselected" : ""}" id="friday">Fri</div>
 						 		<div class="updateDay ${(($.inArray("saturday",data.days)!==-1)) ? "dayselected" : ""}" id="saturday">Sat</div>
 						 		<div class="updateDay ${(($.inArray("sunday",data.days)!==-1)) ? "dayselected" : ""}" id="sunday">Sun</div><br>
-						 		</div><br><br><br>
+						 		</div>
 
-						 		<div class="weekWrapper" ${(data.schedule=="Weekly") ? "" : "style ='' display:none'"}>
+						 		<div class="weekWrapper" ${(data.schedule=="Weekly") ? "" : "style ='display:none'"}>
 						 		<label for="schedule">These many days in a week  </label><br>
 						 		<select class="weeklyFrequency">
 						 		<option value="1">1</option>
@@ -84,7 +84,7 @@ $('body').on("click" , ".update" ,function(){
 						 		<option value="5">5</option>
 						 		<option value="6">6</option>
 						 		</select>
-						 		</div><br>
+						 		</div>
 
 						 		<div class="monthWrapper" ${(data.schedule=="Monthly") ? "" : "style ='display:none'"}>
 						 		<label for="schedule">This time of the month  </label><br>
@@ -94,12 +94,12 @@ $('body').on("click" , ".update" ,function(){
 						 		<option value="end">end</option>
 						 		</select>
 						 		</div>
-						  		 
+						  		 <div class="time">
 						  		 <label for="time">In the </label><br>
 						 		 <input type="checkbox" name="updateTime" value="Morning" ${(($.inArray("Morning",data.dayTime)!==-1)) ? "checked" : ""}> Morning<br>
 						  		 <input type="checkbox" name="updateTime" value="Afternoon" ${(($.inArray("Afternoon",data.dayTime)!==-1)) ? "checked" : ""}> Afternoon<br>
 						  		 <input type="checkbox" name="updateTime" value="Evening" ${(($.inArray("Evening",data.dayTime)!==-1)) ? "checked" : ""} > Evening<br>
-
+									</div>
 						  		 <button class="updateActivity bttn">Update</button>
 
 					</div>

@@ -18,6 +18,14 @@ body {
 
 }
 
+
+
+.time {
+     width: 100%; 
+    float: left;
+    clear: both;
+}
+
 /* Custom page header */
 .header {
   padding-bottom: 20px;
@@ -233,6 +241,7 @@ div.btn{
   overflow: scroll;
   border:2px solid maroon;
   line-height: 1.5;
+
   /*margin:140px auto 0px;*/
 }
 
@@ -241,7 +250,9 @@ div.btn{
   color:grey;
 }
 .bttn{
-  width:20%;
+  width:60%;
+  float:left;
+  margin-left:20%;
   height:40px;
   color:yellow;
   font-size:20px;
@@ -276,5 +287,22 @@ img{
   height: 25px;
 }
 
-
+.hambergermenu{
+  display:none;
+}
+@media only screen and (max-width : 690px)
+{
+  .nav{
+    display: none;
+  }
+  .hambergermenu{
+  display:block;
+  float:right;
+  margin-bottom: -20px;
+  margin-top:10px;
+}
+#update{
+  width:85%;
+}
+}
 

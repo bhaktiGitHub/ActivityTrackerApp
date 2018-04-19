@@ -1,8 +1,5 @@
 <h2 class="page-header">New Activity</h2> 
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+
     
     <section class="activityList">
       
@@ -21,7 +18,7 @@
                  <input type="radio" name="schedule" value="Daily" > Daily<br>
                     <input type="radio" name="schedule" value="Weekly"  > Weekly<br>
                    <input type="radio" name="schedule" value="Monthly" > Monthly<br>
-
+                   <br>
                 <div class="dayWrapper">                
                 <label for="schedule">These Days  </label><br>
                 <div  id="monday"   class="day">Mon</div>
@@ -43,7 +40,7 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
                 </select>
-                </div><br>
+                </div>
 
                 <div class="monthWrapper" style="display:none">
                 <label for="schedule">This time of the month  </label><br>
@@ -52,13 +49,13 @@
                 <option value="middle">middle</option>
                 <option value="end">end</option>
                 </select>
-                </div><br><br><br>
-                   
+                </div>
+                   <div class ="time">
                    <label for="time">In the </label><br>
                  <input type="checkbox" name="time" value="Morning"> Morning<br>
                    <input type="checkbox" name="time" value="Afternoon"> Afternoon<br>
                    <input type="checkbox" name="time" value="Evening" > Evening<br><br>
-
+                   </div>
                    <button class="bttn addActivity">Add Activity</button>
 
       
